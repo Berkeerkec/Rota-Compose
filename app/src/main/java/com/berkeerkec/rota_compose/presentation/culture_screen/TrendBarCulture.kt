@@ -1,4 +1,4 @@
-package com.berkeerkec.rota_compose.presentation.food_screen
+package com.berkeerkec.rota_compose.presentation.culture_screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -39,10 +39,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.berkeerkec.rota_compose.R
+import com.berkeerkec.rota_compose.presentation.food_screen.TrendRow
 import com.berkeerkec.rota_compose.presentation.ui.theme.Poppins
 
 @Composable
-fun TrendBarFood(){
+fun TrendBarCulture(){
     Row {
         Column(
             modifier = Modifier
@@ -106,19 +107,19 @@ fun TrendBarFood(){
                 modifier = Modifier
                     .horizontalScroll(horizontalScroll)
             ) {
-                TrendRow()
-                TrendRow()
-                TrendRow()
-                TrendRow()
-                TrendRow()
+
+                TrendRowCulture()
+                TrendRowCulture()
+                TrendRowCulture()
+                TrendRowCulture()
             }
         }
     }
 }
 
-@Composable
-fun TrendRow(){
 
+@Composable
+fun TrendRowCulture(){
     Column {
 
         Box(){
@@ -135,7 +136,7 @@ fun TrendRow(){
                         .fillMaxSize()
                 ) {
                     Image(
-                        bitmap = ImageBitmap.imageResource(R.drawable.restaurant_food),
+                        bitmap = ImageBitmap.imageResource(R.drawable.collesium),
                         contentDescription = "",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier.fillMaxSize()
@@ -158,7 +159,7 @@ fun TrendRow(){
                                     modifier = Modifier
                                         .size(80.dp, 35.dp)
                                         .clip(RoundedCornerShape(12.dp))
-                                        .blur(10.dp,10.dp)
+                                        .blur(10.dp, 10.dp)
                                 )
                                 Row {
                                     Image(
@@ -168,7 +169,7 @@ fun TrendRow(){
                                     )
                                     Spacer(modifier = Modifier.width(10.dp))
                                     Text(
-                                        text = "4,5",
+                                        text = "4,0",
                                         fontFamily = Poppins,
                                         fontWeight = FontWeight.Medium,
                                         color = Color.White,
@@ -201,13 +202,12 @@ fun TrendRow(){
                 }
             }
         }
-
-        TitleUserScreen()
+        TitleUserCultureScreen()
     }
 }
 
 @Composable
-fun TitleUserScreen(){
+fun TitleUserCultureScreen(){
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -216,7 +216,7 @@ fun TitleUserScreen(){
     ) {
 
         Text(
-            text = "Mekanda yiyebileceğiniz en iyi şey olabilir",
+            text = "Görülmesi gereken bir yer",
             fontFamily = Poppins,
             fontWeight = FontWeight.SemiBold,
             overflow = TextOverflow.Ellipsis,
@@ -249,9 +249,8 @@ fun TitleUserScreen(){
     }
 }
 
-
-@Composable
 @Preview
-fun TrendBarPreview(){
-    TrendBarFood()
+@Composable
+fun TrendBarCulturePreview(){
+    TrendBarCulture()
 }

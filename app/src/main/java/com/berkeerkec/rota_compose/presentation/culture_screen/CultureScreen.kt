@@ -1,4 +1,4 @@
-package com.berkeerkec.rota_compose.presentation.food_screen
+package com.berkeerkec.rota_compose.presentation.culture_screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -12,9 +12,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun FoodScreen(){
-
-    Box(modifier = Modifier.fillMaxSize()){
+fun CultureScreen(){
+    Box(
+        modifier = Modifier.fillMaxSize()
+    ) {
 
         val scrollView = rememberScrollState()
         Column(
@@ -22,18 +23,17 @@ fun FoodScreen(){
                 .fillMaxSize()
                 .background(Color.White)
                 .verticalScroll(scrollView)
-        ){
-
-            StatusBar()
-            TrendBarFood()
-            PostBar()
-
+        ) {
+            StatusBarCulture()
+            TrendBarCulture()
+            PostBarCulture()
         }
+
     }
 }
 
 @Preview
 @Composable
-fun FoodScreenPreview(){
-    FoodScreen()
+fun CultureScreenPreview(){
+    CultureScreen()
 }
