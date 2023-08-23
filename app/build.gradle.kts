@@ -48,6 +48,7 @@ android {
         }
     }
 }
+val nav_version = "2.6.0"
 
 dependencies {
 
@@ -72,4 +73,7 @@ dependencies {
     implementation ("com.google.accompanist:accompanist-pager-indicators:0.19.0")
     implementation("androidx.compose.foundation:foundation:1.5.0")
     implementation ("com.google.accompanist:accompanist-systemuicontroller:0.30.1")
+
+    //Navigaiton
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }

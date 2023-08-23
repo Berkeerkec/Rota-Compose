@@ -39,6 +39,7 @@ import com.berkeerkec.rota_compose.R
 import com.berkeerkec.rota_compose.presentation.culture_screen.PostBarCulture
 import com.berkeerkec.rota_compose.presentation.ui.theme.Poppins
 
+
 @Composable
 fun PostBarHotel(){
     Column(
@@ -55,21 +56,20 @@ fun PostBarHotel(){
                 .padding(horizontal = 15.dp, vertical = 5.dp)
         )
 
-        LoadPostHotel()
-        LoadPostHotel()
-        LoadPostHotel()
-        LoadPostHotel()
-        LoadPostHotel()
-        LoadPostHotel()
-        LoadPostHotel()
-        LoadPostHotel()
-
+        LoadPostCulture()
+        LoadPostCulture()
+        LoadPostCulture()
+        LoadPostCulture()
+        LoadPostCulture()
+        LoadPostCulture()
+        LoadPostCulture()
+        LoadPostCulture()
     }
 }
 
 
 @Composable
-fun LoadPostHotel(){
+fun LoadPostCulture(){
 
     Column {
 
@@ -85,7 +85,7 @@ fun LoadPostHotel(){
                 Box {
 
                     Image(
-                        bitmap = ImageBitmap.imageResource(R.drawable.kapadokya),
+                        bitmap = ImageBitmap.imageResource(R.drawable.rooms),
                         contentDescription = "Post",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
@@ -150,12 +150,12 @@ fun LoadPostHotel(){
             }
         }
 
-        PostCommentHotel()
+        PostComment()
     }
 }
 
 @Composable
-fun PostCommentHotel(){
+fun PostComment(){
 
     Column(
         modifier = Modifier
@@ -199,6 +199,7 @@ fun PostCommentHotel(){
         Spacer(modifier = Modifier.height(10.dp))
     }
 }
+
 
 
 @Preview

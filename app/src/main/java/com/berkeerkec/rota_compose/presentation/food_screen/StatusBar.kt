@@ -39,7 +39,7 @@ fun StatusBar(){
                 text = "Find the best food",
                 fontFamily = Poppins,
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 26.sp
+                fontSize = 24.sp
             )
 
             FloatingActionButton(

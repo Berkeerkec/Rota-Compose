@@ -39,7 +39,7 @@ fun StatusBarCulture(){
                 text = "Discover new places",
                 fontFamily = Poppins,
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 26.sp
+                fontSize = 24.sp
             )
 
             FloatingActionButton(

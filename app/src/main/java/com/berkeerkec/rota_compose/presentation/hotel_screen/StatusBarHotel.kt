@@ -39,7 +39,7 @@ fun StatusBarHotel(){
                 text = "Where can I stay ?",
                 fontFamily = Poppins,
                 fontWeight = FontWeight.SemiBold,
-                fontSize = 26.sp
+                fontSize = 24.sp
             )
 
             FloatingActionButton(

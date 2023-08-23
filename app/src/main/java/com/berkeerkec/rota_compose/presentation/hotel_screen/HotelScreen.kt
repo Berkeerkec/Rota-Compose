@@ -27,6 +27,7 @@ fun HotelScreen(){
 
             StatusBarHotel()
             TrendBarHotel()
+            PostBarHotel()
         }
 
     }

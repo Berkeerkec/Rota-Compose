@@ -83,7 +83,7 @@ fun LoadPostCulture(){
                 Box {
 
                     Image(
-                        bitmap = ImageBitmap.imageResource(R.drawable.rooms),
+                        bitmap = ImageBitmap.imageResource(R.drawable.kapadokya),
                         contentDescription = "Post",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier

@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                             darkIcons = true
                         )
                     }
-                    FoodScreen()
+                    MainScreen()
                 }
             }
         }
